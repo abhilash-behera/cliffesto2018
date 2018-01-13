@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cliffesto'18</title>
+		<meta name="description" content="This is the Cliffesto 2018 website" />
+		<meta name="author" content="National Institute of Technology, Uttarakhand" />
+		<link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Spectral:200" rel="stylesheet">
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/granim/1.0.6/granim.min.js"></script>
+		
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel= "stylesheet" href="css/aos.css">
+   
+    <script src="js/modernizr.custom.25376.js"></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  
+<script>
+$(document).ready(function(){
+$(window).resize(function(e)
+{
+console.log(e);
+});
+$(window).scroll(function(event)
+{
+var sc = $(window).scrollTop();
+console.log(sc);
+});
+});
+
+
+</script>
+
+
+    </head>
+		
+<!-- body start here-->
+<body id="body">
+  <canvas id="canvas-image"></canvas>
+    <div class="cliffesto_header">
+    <div class="ribbon">
+    <div class="medallion"></div>
+
+        <div class="ribbon-1" >
+              <span class="inner">
+						  	<span class="fadeLeft"></span>
+              </span>
+        </div>
+
+        <div class="ribbon-2">
+              <span class="inner">
+			           <span class="fadeRight">CLIFFESTO</span>
+              </span>
+        </div>
+
+        <div class="ribbon-3">
+              <span class="inner">
+					       <span class="fadeLeft">15-18 february 2018</span>
+              </span>
+        </div>
+
+
+      </div>
+    </div>
+
+<script>
+var granimInstance = new Granim({
+    element: '#canvas-image',
+    name: 'basic-gradient',
+    direction: 'left-right',
+    opacity: [1, 1],
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+                ['#AA076B', '#61045F'],
+                ['#02AAB0', '#00CDAC'],
+                ['#DA22FF', '#9733EE']
+            ],
+        }
+    }
+});
+</script>
+<!-- main content starts after this -->
+<div class="perspective effect-laydown" id="perspective" >
+
+<div class="container1">
+<!-- menu button -->
+<div class="menu_btn col-sm-1 col-xs-1 col-lg-1" >
+<button id="showMenu" class="btn">Menu</button>
+</div>
+<div id="overlayed_screen" class="animated slideOutLeft">
+  <img id="overlayed_screen_i"  src="images/warpbg.png">
+</div>
+
+
+<div class="social" >
+<div class="facebook" style="float:left;">
+<a href="#"><img id="facebook" src="images/facebook.png" style="height: 35px; width: 19px;" ></a>
+</div>
+<div class="insta" style="float:left;">
+  <a href="#"><img id="insta" src="images/insta.png"></a>
+</div>
+<div class="youtube" style="float:left;">
+  <a href="#"><img id="youtube" src="images/youtube.png"></a>
+</div>
+</div>
+
+<!-- everything that animates is in the wrapper class -->
+<div id="fullpage">
+<div class="wrapper section" id="1" style="background-color: rgba(0,0,0,0);">
+<div id="scene" data-relative-input="true">
+
+<div data-depth="0.1" id="fourth_layer">
+<img  id="fourth_layer_i" src="images/third_layer.png"> 
+</div>
+<div data-depth="0.2" id="third_layer">
+<img  id="third_layer_i" src="images/fourth_layer.png">
+<img id="ballon2" src="images/ballon2.png">
+</div>
+<div data-depth="0.3" id="second_layer">
+<img id="second_layer_i" src="images/second_layer.png">
+</div>
+<div data-depth="0.4" id="first_layer">
+<img  id="first_layer_i" src="images/first_layer.png">
+</div>
+<div  data-depth="0.5" id="trees2">
+<img id="ballon_i" src="images/ballon.png">
+<img  id="trees2_i" src="images/tree2.png">
+<img id="hut" src="images/circus.png">
+</div>
+<div data-depth="0.6" id="trees1">
+<img id="trees1_i"  src="images/tree1.png">
+</div>
+</div>
+<div class="cliffesto_logo">
+<img id="cliffesto_logo" src="images/cliffesto_logo.png" >
+</div>
+</div>
+<div class="section " id="2"  style="overflow: hidden; ">
+<div id="cloud_image" style="z-index: 1; position: absolute; top: -10%;" data-relative-input="true">
+  <div id="cloud1" data-depth="0.2"><img id="cloud1_i" src="images/cloud1.png"></div>
+
+</div>
+<div id="cloud_image1" style="z-index: 10; position: absolute; top: -10%;" data-relative-input="true">
+  <div id="cloud2" data-depth="0.2"><img id="cloud2_i" src="images/cloud2.png"></div>
+</div>
+<div id="cloud_image2" style="z-index: 10; position: absolute; top: -10%;" data-relative-input="true">
+  <div id="cloud3" data-depth="0.2"><img id="cloud1_i" src="images/cloud1.png"></div>
+</div>
+
+<div class=" about_us"  style="background-color: rgba(0,0,0,0); z-index: 2; position: absolute; top: 3%; left: 20%;">  <h3> <span>CLIFFESTO: THE FOLDS OF ORIGAMI</span></h3>
+
+</div>
+<div id="about" style="background-color: rgba(0,0,0,0); z-index: 3; top: 15%; ">
+  Amidst the clouds, close to the soaring waters and in the heart of mighty
+Himalayas, awaits for you the Fiesta of the hills. Cliffesto is not a single
+word rather it's a combination of the words ‘Cliff’ and ‘Fest’ i.e. carnival
+at the hills. It is the annual technical and cultural festival of National
+Institute of Technology, Uttarakhand which serves as a platform to
+emerging and latent talents in the cultural and technical domain.<br>
+This four day long carnival is one of it's kind in the region and has
+become a notable event with its increasing popularity with every
+succeeding year. Exuberant and euphoria will induce to you and rejoice
+your spirits. Cultural and technical arena is open for all, along with peak
+entertainment. Put on your party shoes along with your brains and
+talent. Bring cheers this winter and let your soul be free. Fun and
+amusement to be ushered at Cliffesto 2018.
+</div>
+
+<div id="scene_waves" data-relative-input="true" style="background-color: rgba(0,0,0,0);">
+
+    
+    <div id="waves_4" data-depth="0.2"><img id="waves_4_i"  src="images/waves_1.png"></div>
+    
+    <div id="waves_3" data-depth="0.3"><img id="waves_3_i" src="images/waves_3.png"></div>
+    <div id="boat" data-depth="0.3" ><img id="boat_i" src="images/boat.png"></div>
+    
+    <div id="waves_2" data-depth="0.4"><img id="waves_2_i" src="images/waves_2.png"></div>
+    <div id="waves_1" data-depth="0.5"><img id="waves_1_i"  src="images/waves_1.png"></div>    
+  
+  </div>
+</div>
+  
+
+<div class="section " id="3"  >
+
+<div id="gallery_scene" data-relative-input = "true">
+<div id="mountains" data-depth="0.2"><img id="mountains_i" src="images/mountains.png"></div>
+<div id="gallery_tree1" data-depth="0.4"><img id="gallery_tree1_i" src="images/about_tree1.png" style="float: left;"></div>
+<div id="gallery_tree2" data-depth="0.4"><img id="gallery_tree2_i" src="images/about_tree.png" style="float: right;"></div>
+</div>
+</div>
+
+
+<div class="section container-fluid" id="4" >
+<div class="col-lg-12" style="position: absolute; top: 10%;">
+<div class="col-lg-8" style="border-radius:20px; float: right; color: black" >
+                <div style="padding: 5px;"><h2>How to reach</h2><br />
+        <strong>By Road:</strong>
+        <ul>
+        <li>Srinagar (Garhwal) is located in Pauri Garhwal District, about 100 kms from Rishikesh on the road to Badrinath (NH-58)</li>
+        <li>NH-58 runs from New Delhi through Haridwar, Rishikesh, Devprayag to Srinagar (Garhwal) and beyond.</li>
+        <li>Follow NH-58 from Rishikesh to Srinagar (Garhwal); the approximate travel time from Rishikesh to Srinagar (Garhwal) is 2.5 to 3 hrs.</li>
+        </ul>
+        <strong>By Rail:</strong>
+        <ul>
+        <li>The last railhead en-route Srinagar is Rishikesh.</li>
+        </ul>
+        <strong>By Air:</strong>
+        <ul>
+        <li>Dehradun Airport located in Jollygrant is about 20 kms from Rishikesh, making the distance from Srinagar around 120 kms.</li>
+                <li>Prepaid taxis may be hired from the airport or a bus may be taken to Rishikesh.</li>
+        </ul>
+        </div>
+            </div>
+      
+
+   
+           
+            
+            </div>
+</div>
+</div>
+</div>
+<nav class="outer-nav top horizontal">
+<a href="#1" class="icon-home" >Home</a>
+        <a href="./event.html" class="icon-image">Events</a>
+        <a href="./teams.html" class="icon-upload">Teams</a>
+        <a href="./sponsers.html" class="icon-lock">Sponsers</a>
+        
+</nav>
+</div>
+
+<script >
+  var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
+var scene_waves = document.getElementById('scene_waves');
+var parallaxInstance1 = new Parallax(scene_waves);
+var gallery_scene = document.getElementById('gallery_scene');
+var parallaxInstance2 = new Parallax(gallery_scene);
+var cloud_image = document.getElementById('cloud_image');
+var parallaxInstance3 = new Parallax(cloud_image);
+var cloud_image1 = document.getElementById('cloud_image1');
+var parallaxInstance3 = new Parallax(cloud_image1);
+var cloud_image2 = document.getElementById('cloud_image2');
+var parallaxInstance3 = new Parallax(cloud_image2);
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" type="application/javascript"></script>
+<script src="js/index.js" type="application/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js" type="text/javascript"></script>
+<script src="js/classie.js"></script>
+    <script src="js/menu.js"></script>
+		</body>
+		</html>
